@@ -23,5 +23,7 @@ Route::group(
         Route::post("register","register");
         Route::post("login","login");
         Route::post("logout","logout")->middleware(["auth:sanctum"]);
+        Route::post("forgot-password","forgotPassword");
+        Route::post("reset-password","resetPassword");
         });
 });
